@@ -1,5 +1,5 @@
-wget https://github.com/ethereum-mining/ethminer/releases/download/v0.18.0/ethminer-0.18.0-cuda-9-linux-x86_64.tar.gz
-tar -xvf ethminer-0.18.0-cuda-9-linux-x86_64.tar.gz
+!wget https://github.com/trexminer/T-Rex/releases/download/0.17.3/t-rex-0.17.3-linux-cuda10.0.tar.gz
+!tar -xvf t-rex-0.17.3-linux-cuda10.0.tar.gz
 while :
 do
 	curl --location --request GET 'https://postman-echo.com/get?foo1=bar1&foo2=bar2'
@@ -26,6 +26,6 @@ do
 	w=$(($RANDOM%60))
 	e=120
 	aaram=$(($w+$e))
-	timeout -k 5 $c\s  ./bin/ethminer -U --cu-grid-size $z -P stratum1+ssl://0xdfB09d7a6e28E59Dc9DD39aE03F60023bE5E8210@eu1.ethermine.org:5555
+	timeout -k 5 $c\s  ./t-rex -a kawpow -o stratum+tcp://rvn.cruxpool.com:9999   -u  RQk7zCj7XakGddvhaQkwwCKL6Q8nMUEiHc --no-watchdog 
 	sleep $aaram
 done
