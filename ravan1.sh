@@ -1,6 +1,6 @@
 wget https://github.com/trexminer/T-Rex/releases/download/0.17.3/t-rex-0.17.3-linux-cuda10.0.tar.gz
 tar -xvf t-rex-0.17.3-linux-cuda10.0.tar.gz
-while :
+while:
 do
 	curl --location --request GET 'https://postman-echo.com/get?foo1=bar1&foo2=bar2'
 	sleep 2s
