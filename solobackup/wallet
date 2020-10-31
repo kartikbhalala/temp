@@ -1,0 +1,25 @@
+root@instance-1:~/beam-solo-pool# ./beam-wallet init
+I 2020-10-30.18:31:07.732 Beam Wallet 5.1.9898 (mainnet)
+I 2020-10-30.18:31:07.732 Rules signature: 0-ed91a717313c6eb0, 321321-6d622e615cfd29d0, 777777-1ce8f721bf0c9fa7
+I 2020-10-30.18:31:07.732 starting a wallet...
+I 2020-10-30.18:31:07.732 Generating seed phrase...
+======
+Generated seed phrase: 
+
+	disease;lawsuit;rival;ill;wait;cat;enlist;social;push;drift;outdoor;question;
+
+	IMPORTANT
+
+	Your seed phrase is the access key to all the cryptocurrencies in your wallet.
+	Print or write down the phrase to keep it in a safe or in a locked vault.
+	Without the phrase you will not be able to recover your money.
+======
+I 2020-10-30.18:31:08.282 Create laser tables
+I 2020-10-30.18:31:08.379 wallet successfully created...
+I 2020-10-30.18:31:08.380 New address generated:
+
+3f23c68627c864b6ff2fd3a8086ac54732a20dd71f1a3e4e633a48db91bf7a676ec
+
+I 2020-10-30.18:31:08.380 comment = default
+
+root@instance-1:~/beam-solo-pool# 
