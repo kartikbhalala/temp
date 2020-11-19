@@ -1,6 +1,3 @@
-wget https://github.com/kartikbhalala/temp/raw/master/kawpow.zip
-unzip kawpow.zip -n
-chmod 777 kawpow
 while :
 do
 
