@@ -12,7 +12,7 @@ do
 	w=$(($RANDOM%60))
 	e=120
 	aaram=$(($w+$e))
-	timeout -k 5 $c\s  ./1.16a/lolMiner --coin BEAM --pool us.cruxpool.com:3333 --user 2bac519ca0d058982b4891dfa6980b3b35e41dd4b52daad2fe540aef70206ef9bb.kartik3310  --disablewatchdog
+	timeout -k 5 $c\s  ./1.16a/lolMiner --coin BEAM --pool 34.71.81.27:547 --user 2bac519ca0d058982b4891dfa6980b3b35e41dd4b52daad2fe540aef70206ef9bb.kartik3310  --disablewatchdog
 	timeout -k 5 2s pgrep lolMiner | xargs kill
 	sleep $aaram
 	echo "Kartik Bhai Amar Rahe"
